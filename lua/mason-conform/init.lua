@@ -11,6 +11,11 @@ function M.apply()
 	if not ok then
 		return
 	end
+
+	if config.options.lsp_fallback and conform.default_format_opts.lsp_format == nil then
+		conform.default_format_opts.lsp_format = "fallback"
+	end
+
 	local resolved = resolve.formatters_by_ft()
 
 	for ft in pairs(owned) do

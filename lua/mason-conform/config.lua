@@ -18,6 +18,7 @@ M.defaults = {
 	formatter_names = { ruff = { "ruff_organize_imports", "ruff_format" } },
 	exclude = { "rustywind", "ast_grep", "doctoc", "markdown_toc" },
 	overrides = {},
+	lsp_fallback = true,
 }
 
 M.options = vim.deepcopy(M.defaults)
