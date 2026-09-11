@@ -15,7 +15,10 @@ M.defaults = {
 		json = { "jsonc" },
 		shell = { "bash", "zsh" },
 	},
-	formatter_names = { ruff = { "ruff_organize_imports", "ruff_format" } },
+	formatter_names = {
+		ruff = { "ruff_organize_imports", "ruff_format" },
+		["google-java-format"] = "google-java-format",
+	},
 	exclude = { "rustywind", "ast_grep", "doctoc", "markdown_toc" },
 	overrides = {},
 	lsp_fallback = true,
